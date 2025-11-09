@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View, ScrollView, TouchableOpacity } from 'react-native';
-import { Ionicons, MaterialIcons, Feather } from '@expo/vector-icons';
+import { Ionicons } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
 import Constants from 'expo-constants';
 
@@ -9,7 +9,7 @@ import ScreenWrapper from '../components/ScreenWrapper';
 import { useTheme } from '../context/ThemeContext';
 import { useI18n } from '@/i18n/I18nProvider';
 
-export default function SobreNosScreen() {
+export default function SobreAppScreen() {
   const navigation = useNavigation<any>();
   const { theme } = useTheme();
   const { t } = useI18n();
@@ -24,47 +24,12 @@ export default function SobreNosScreen() {
 
         <ScrollView contentContainerStyle={styles.container}>
           <View style={styles.section}>
-            <Ionicons
-              name="information-circle-outline"
-              size={24}
-              color={theme.primary}
-              style={styles.icon}
-            />
-            <Text style={[styles.text, { color: theme.text }]}>
-              {t('about.description')}
-            </Text>
-          </View>
-
-          <View style={styles.section}>
-            <Feather name="phone" size={24} color={theme.primary} style={styles.icon} />
-            <Text style={[styles.text, { color: theme.text }]}>
-              {t('about.phone')}: +55 11 3181-8188
-            </Text>
-          </View>
-
-          <View style={styles.section}>
-            <MaterialIcons name="email" size={24} color={theme.primary} style={styles.icon} />
-            <Text style={[styles.text, { color: theme.text }]}>
-              {t('about.email')}: mottu@empresa.com.br
-            </Text>
-          </View>
-
-          <View style={styles.section}>
-            <Ionicons name="time-outline" size={24} color={theme.primary} style={styles.icon} />
-            <View>
-              <Text style={[styles.text, { color: theme.text }]}>{t('about.hours.title')}</Text>
-              <Text style={[styles.text, { color: theme.text }]}>{t('about.hours.weekdays')}</Text>
-              <Text style={[styles.text, { color: theme.text }]}>{t('about.hours.saturday')}</Text>
-            </View>
-          </View>
-
-          <View style={styles.section}>
             <Ionicons name="git-commit-outline" size={24} color={theme.primary} style={styles.icon} />
             <View style={{ flex: 1 }}>
               <Text style={[styles.text, { color: theme.text }]}>
                 {t('about.version') ?? 'Versão'}: <Text style={{ fontWeight: 'bold' }}>{version}</Text>
               </Text>
-              <Text style={[styles.text, { color: theme.text }]}>
+              <Text style={[styles.text, { color: theme.text, marginTop: 8 }]}>
                 {t('about.commit') ?? 'Commit'}: <Text style={{ fontWeight: 'bold' }}>{commitHash}</Text>
               </Text>
             </View>
@@ -88,9 +53,6 @@ export default function SobreNosScreen() {
 const styles = StyleSheet.create({
   screen: { flex: 1 },
   container: { padding: 20, paddingBottom: 100 },
-  title: {
-    fontSize: 26, fontWeight: 'bold', marginBottom: 24, textAlign: 'center',
-  },
   section: { flexDirection: 'row', alignItems: 'flex-start', marginBottom: 20 },
   icon: { marginRight: 12, marginTop: 4 },
   text: { flex: 1, fontSize: 16, lineHeight: 22 },

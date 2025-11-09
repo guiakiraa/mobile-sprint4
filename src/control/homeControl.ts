@@ -28,7 +28,8 @@ export function useHomeControl() {
       { id: "3", titulo: t("home.options.selectSector"), icone: "layers", rota: "SectorSelection" },
       { id: "4", titulo: t("home.options.motoWithoutPlate"), icone: "barcode", rota: "MotoWithoutPlate" },
       { id: "5", titulo: t("home.options.toggleTheme"), icone: "color-palette", rota: "ToggleTheme" },
-      { id: "6", titulo: t("home.options.logout"), icone: "log-out", rota: "Logout" },
+      { id: "6", titulo: t("home.options.about"), icone: "information-circle", rota: "SobreApp" },
+      { id: "7", titulo: t("home.options.logout"), icone: "log-out", rota: "Logout" },
     ],
     [t]
   );

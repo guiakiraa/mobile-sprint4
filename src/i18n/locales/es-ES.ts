@@ -33,6 +33,7 @@ export default {
       selectSector: "Seleccionar Sector",
       motoWithoutPlate: "Moto sin Placa",
       toggleTheme: "Tema",
+      about: "Sobre la App",
       logout: "Salir",
     },
     logoutAlert: {
@@ -251,15 +252,7 @@ export default {
     },
   },
   about: {
-    title: "Sobre Nosotros",
-    description: "Sistema de gestión de motos de Mottu. Gestiona tu patio de forma eficiente y organizada.",
-    phone: "Teléfono",
-    email: "Correo electrónico",
-    hours: {
-      title: "Horario de Atención",
-      weekdays: "Lunes a Viernes: 8h a 18h",
-      saturday: "Sábado: 8h a 12h",
-    },
+    title: "Sobre la App",
     version: "Versión",
     commit: "Commit",
     actions: {

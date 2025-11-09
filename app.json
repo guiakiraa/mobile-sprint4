@@ -32,7 +32,7 @@
       "expo-dev-client"
     ],
     "extra": {
-      "commitHash": "desconhecido",
+      "commitHash": "22e1bb3",
       "eas": {
         "projectId": "a6a286c5-a746-402e-87d1-7021b04f2adc"
       }

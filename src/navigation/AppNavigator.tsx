@@ -12,7 +12,7 @@ import ListagemMotosScreen from "@/screens/ListagemMotosScreen";
 import SectorSelectionScreen from "@/screens/SectorSelectionScreen";
 import LocateMotoScreen from "@/screens/LocateMotoScreen";
 import MotoWithoutPlateScreen from "@/screens/MotoWithoutPlateScreen";
-import SobreNosScreen from "@/screens/SobreNosScreen";
+import SobreAppScreen from "@/screens/SobreAppScreen";
 
 const Stack = createNativeStackNavigator();
 
@@ -62,7 +62,7 @@ const AppNavigator = () => {
         <Stack.Screen name="SectorSelection" component={SectorSelectionScreen} />
         <Stack.Screen name="LocateMoto" component={LocateMotoScreen} />
         <Stack.Screen name="MotoWithoutPlate" component={MotoWithoutPlateScreen} />
-        <Stack.Screen name="SobreNos" component={SobreNosScreen} />
+        <Stack.Screen name="SobreApp" component={SobreAppScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

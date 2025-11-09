@@ -33,6 +33,7 @@ export default {
       selectSector: "Selecionar Setor",
       motoWithoutPlate: "Moto sem Placa",
       toggleTheme: "Tema",
+      about: "Sobre o App",
       logout: "Sair",
     },
     logoutAlert: {
@@ -251,15 +252,7 @@ export default {
     },
   },
   about: {
-    title: "Sobre Nós",
-    description: "Sistema de gerenciamento de motos da Mottu. Gerencie seu pátio de forma eficiente e organizada.",
-    phone: "Telefone",
-    email: "E-mail",
-    hours: {
-      title: "Horário de Atendimento",
-      weekdays: "Segunda a Sexta: 8h às 18h",
-      saturday: "Sábado: 8h às 12h",
-    },
+    title: "Sobre o App",
     version: "Versão",
     commit: "Commit",
     actions: {
